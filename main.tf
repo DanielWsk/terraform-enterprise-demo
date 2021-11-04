@@ -21,7 +21,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "ubuntu" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.instance_type
-  associate_public_ip_address = true
+  associate_public_ip_address = false
 
   tags = {
     Name = var.instance_name
