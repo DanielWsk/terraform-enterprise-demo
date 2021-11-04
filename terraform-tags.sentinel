@@ -7,7 +7,7 @@ import "tfplan/v2" as plan
 
 # Import aws-functions/aws-functions.sentinel
 # with alias "aws"
-import "aws-functions" as aws
+import "aws/v2" as aws
 
 # List of resources that are required to have name/value tags
 param resource_types default [
