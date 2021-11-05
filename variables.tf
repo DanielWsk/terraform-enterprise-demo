@@ -12,3 +12,13 @@ variable "instance_name" {
   description = "EC2 instance name"
   default     = "EC2-test"
 }
+
+variable "bucket_name" {
+  type = string
+  default = ""
+}
+
+variable "acl" {
+  type = string
+  default = "private"
+}
