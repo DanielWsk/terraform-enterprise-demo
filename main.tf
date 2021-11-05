@@ -28,12 +28,12 @@ resource "aws_instance" "ubuntu" {
   }
 }
 
-# resource "aws_s3_bucket" "b" {
-#   bucket = var.bucket_name
-#   acl    = var.acl
+resource "aws_s3_bucket" "b" {
+  bucket = var.bucket_name
+  acl    = var.acl
 
-#   tags = {
-#     Name        = var.bucket_name
-#     Environment = "Dev"
-#   }
-# }
+  tags = {
+    Name        = var.bucket_name
+    Environment = "Dev"
+  }
+}
