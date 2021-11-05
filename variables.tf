@@ -13,12 +13,12 @@ variable "instance_name" {
   default     = "EC2-test"
 }
 
-# variable "bucket_name" {
-#   type = string
-#   default = ""
-# }
+variable "bucket_name" {
+  type = string
+  default = ""
+}
 
-# variable "acl" {
-#   type = string
-#   default = "private"
-# }
+variable "acl" {
+  type = string
+  default = "private"
+}
